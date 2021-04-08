@@ -3,8 +3,8 @@
 ## Objectiu
 Instal·lar un sistema que permeti als alumnes i professors utilitzar quaderns per a programar en Python i utilitzar el programa Mathematica.
 
-- [Instal·lació març 2021](https://github.com/lreyc/Raspberry-pi/blob/982fd45f730f9b71b9126f31841917e40cd124f1/Instal%C2%B7laci%C3%B3_JuypyterHub_i_Labs.md)
-- Instal·lació JuypyterHub i Labs
+- [Instal·lació març 2021]()
+- [Instal·lació JuypyterHub i Labs](https://github.com/lreyc/Raspberry-pi/blob/982fd45f730f9b71b9126f31841917e40cd124f1/Instal%C2%B7laci%C3%B3_JuypyterHub_i_Labs.md)
 - Reverse Proxy para Jupyter
 - Instal·lar Mathematica i afegir a Jupyter Hub
 - Usuaris a Jupyter Hub/Lab
@@ -16,6 +16,7 @@ Instal·lar un sistema que permeti als alumnes i professors utilitzar quaderns p
 - Extensions de Jupyter Lab
 - Assignar IP fixa
 - Servei HTTPS
+- Instal·lar paquets matemàtics a Python
 
 ## Pendent
 - Notebooks d'exemple
@@ -26,13 +27,7 @@ Instal·lar un sistema que permeti als alumnes i professors utilitzar quaderns p
 - Creació usuaris alumnes finals
 - Eliminar usuaris
 - Crear pàgina 404
-- Instal·lar paquets Python
-    - Numpy
-    - Pandas
-    - Matplotlib
-    - Scipy (càlcul simbòlic en Python)
 
-Servei DNS dinàmic per a proves (Només proves, no entra en producció)
 
 ## Descartat
 
@@ -47,5 +42,6 @@ Remot
     $ ssh -l pi -p 2202 iesalzina.xtec.cat
 
 ## Més informació
+Un exemple de feina molt semblant
 - https://professorkazarinoff.github.io/jupyterhub-engr101/
 - https://professorkazarinoff.github.io/jupyterhub-engr114/
