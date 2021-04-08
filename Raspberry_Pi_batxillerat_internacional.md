@@ -3,7 +3,7 @@
 ## Objectiu
 Instal·lar un sistema que permeti als alumnes i professors utilitzar quaderns per a programar en Python i utilitzar el programa Mathematica.
 
-- [Instal·lació març 2021](.\Hola)
+- [Instal·lació març 2021](.\Instal·lació_JuypyterHub_i_Labs.md)
 - Instal·lació JuypyterHub i Labs
 - Reverse Proxy para Jupyter
 - Instal·lar Mathematica i afegir a Jupyter Hub
