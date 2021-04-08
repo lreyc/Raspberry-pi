@@ -1,4 +1,5 @@
 # Instal·lació dels paquets Python matemàtiques
+
 Els paquets [SciPy](https://www.scipy.org) permeten treballar diferents aspectes de ciències i matemàtiques amb Python.
 - Numpy: càlcul amb matrius i vectors multidimensionals
 - Matplotlib: representació de gràfics
@@ -6,7 +7,9 @@ Els paquets [SciPy](https://www.scipy.org) permeten treballar diferents aspectes
 - Pandas: anàlisis de dades
 - SymPy: càlcul simbòlic
 
+
 ## Instal·lar els diferents paquets.
+
 La instal·lació es fa en l'entorn virtual on hem instal·lat JupyterHub
 
     $ sudo apt-get install libatlas-base-dev
