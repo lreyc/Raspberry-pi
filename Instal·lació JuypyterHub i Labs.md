@@ -21,12 +21,14 @@ A single-user notebook server that is started for every user on the system when 
 The hub that manages the user accounts, authentication and coordinates the single-user notebook servers.
 A proxy that routes the user requests to the hub and the notebook servers.
 
-### Instal·lar sistema npm i proxy
+###  Instal·lar sistema npm i proxy
+
 npm és el sistema de node.js un entorn de programació en javascript.
     $ sudo apt install nodejs npm
     $ sudo npm install -g configurable-http-proxy
 
 ### Crear l'entorn virtual on funcionarà Jupyter
+
     $ sudo python3 -m venv /opt/jupyterhub/
 Atenció que tot, tot, el que s'instal·li per a jupyter s'haurà d'instal·lar en aquest entorn.  Es pot distingir per l'ordre "/opt/jupyterhub/bin/python3 -m" que ha de precedir a tot.
 
