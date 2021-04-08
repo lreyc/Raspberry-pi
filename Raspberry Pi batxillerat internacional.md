@@ -47,5 +47,5 @@ Remot
     $ ssh -l pi -p 2202 iesalzina.xtec.cat
 
 ## Més informació
-https://professorkazarinoff.github.io/jupyterhub-engr101/
-https://professorkazarinoff.github.io/jupyterhub-engr114/
+- https://professorkazarinoff.github.io/jupyterhub-engr101/
+- https://professorkazarinoff.github.io/jupyterhub-engr114/
