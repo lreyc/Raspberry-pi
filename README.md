@@ -9,4 +9,4 @@ Notes varies sobre la Raspberry Pi.
 
 ## Projectes en marxa
 
-- [Raspberry pi per al Batxillerat internacional](./raspIB/Readme)
+- [Raspberry pi per al Batxillerat internacional](./raspIB)
