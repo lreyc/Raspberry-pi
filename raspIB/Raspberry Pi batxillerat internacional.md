@@ -22,9 +22,9 @@ Instal·lar un sistema que permeti als alumnes i professors utilitzar quaderns p
 ## Pendent
 
 - Notebooks d'exemple
-    - Python
-    - Mathematica
-    - Com canviar la contrasenya
+  - Python
+  - Mathematica
+  - Com canviar la contrasenya
 - Creació usuris professors
 - Creació usuaris alumnes finals
 - Crear pàgina 404
