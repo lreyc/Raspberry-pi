@@ -4,15 +4,14 @@ L'intenció es poder accedir al notebooks de jupyter en un entorn multiusuari.
 
 ## Fer Python 3 l'opció per defecte i instal·lar els paquets necessaris
 
-    $ sudo rm /usr/bin/python
-    $ sudo ln -s /usr/bin/python3 /usr/bin/python
-    $ sudo apt install python3 python3-dev git curl python3-venv
+    sudo rm /usr/bin/python
+    sudo ln -s /usr/bin/python3 /usr/bin/python
+    sudo apt install python3 python3-dev git curl python3-venv
 
 ## Instal·lar el gestor de paquets de Python
 
-    $ sudo apt-get install python3-pip
-    $ sudo pip3 install --upgrade pip
-
+    sudo apt-get install python3-pip
+    sudo pip3 install --upgrade pip
 
 ## Instal·lar Jupyter Notebook, Hub i Lab
 
@@ -29,24 +28,26 @@ npm és el sistema de node.js un entorn de programació en javascript.
 
 ### Crear l'entorn virtual on funcionarà Jupyter
 
-    $ sudo python3 -m venv /opt/jupyterhub/
+    sudo python3 -m venv /opt/jupyterhub/
 Atenció que tot, tot, el que s'instal·li per a jupyter s'haurà d'instal·lar en aquest entorn.  Es pot distingir per l'ordre "/opt/jupyterhub/bin/python3 -m" que ha de precedir a tot.
 
 ### Instal·lar JupyterHub (amb els notebooks)
-    $ sudo /opt/jupyterhub/bin/python3 -m pip install wheel
-    $ sudo /opt/jupyterhub/bin/python3 -m pip install jupyterhub jupyterlab
-    $ sudo /opt/jupyterhub/bin/python3 -m pip install ipywidgets
+
+    sudo /opt/jupyterhub/bin/python3 -m pip install wheel
+    sudo /opt/jupyterhub/bin/python3 -m pip install jupyterhub jupyterlab
+    sudo /opt/jupyterhub/bin/python3 -m pip install ipywidgets
 
 Crear la configuració
 
-    $ sudo mkdir -p /opt/jupyterhub/etc/jupyterhub/
-    $ cd /opt/jupyterhub/etc/jupyterhub/
-    $ sudo /opt/jupyterhub/bin/jupyterhub --generate-config
+    sudo mkdir -p /opt/jupyterhub/etc/jupyterhub/
+    cd /opt/jupyterhub/etc/jupyterhub/
+    sudo /opt/jupyterhub/bin/jupyterhub --generate-config
 És a dir, crea el directori per a la configuració i s'accedix. Crida a jupyterhub per a crear la configuració en el directori actual.
 
 Podem afegir l'opció que arrenqui directament amb Jupyter Lab:
-    $ nano jupyterhub_config.py
 
+    $ nano jupyterhub_config.py
+    
     c.Spawner.default_url = '/lab'
 
 ## Establir com a servei del sistema
@@ -80,7 +81,7 @@ Activar el sistema i comprovar el funcionament.
     $ sudo systemctl status jupyterhub.service
 
 Comprovar el funcionament a
-http://raspib.local:8000
+<http://raspib.local:8000>
 Entrar amb l'usuari pi i la seva contrasenya (pi:L12R18g7). De moment per a tots els usuaris creats a la raspberry es pot accedir.
 
 ## Instal·lar Jupyter Lab
@@ -98,7 +99,8 @@ I modificar la configuració per a a que funcioni:
 Una opció que en principi és molt interessant és instal·lar The Littlest JupyterHub. Simplifica molt tot el provés però l'instal·lador només funciona en Ubuntu. A més sembla tenir problemes amb l'arquitectura ARM. Llàstima semblava molt interessant. S'ha descartat
 També s'ha descartat l'opció de funcionar amb Docker, no hi ha versions de imatges Docker per a ARM de la raspberry pi.
 
-## Més informació
-- https://jupyterhub.readthedocs.io/en/stable/installation-guide-hard.html
-- https://towardsdatascience.com/setup-your-home-jupyterhub-on-a-raspberry-pi-7ad32e20eed
-- https://stackoverflow.com/questions/55132540/jupyterlab-on-jupyterhub
+## Més informació
+
+- <https://jupyterhub.readthedocs.io/en/stable/installation-guide-hard.html>
+- <https://towardsdatascience.com/setup-your-home-jupyterhub-on-a-raspberry-pi-7ad32e20eed>
+- <https://stackoverflow.com/questions/55132540/jupyterlab-on-jupyterhub>
